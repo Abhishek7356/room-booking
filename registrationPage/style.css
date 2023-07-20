@@ -1,0 +1,26 @@
+.section::before{
+    content: '';
+    position: absolute;
+    background-image: url('https://th.bing.com/th/id/OIP.-sT2GGfLP4Xj7epVexbC3AHaEW?pid=ImgDet&w=1879&h=1103&rs=1');
+    width: 100%;
+    height: 95vh;
+    z-index: -1;
+    opacity: .4;
+}
+.section{
+    width: 100%;
+    height: 95vh;
+}
+form{
+    width: 50%;
+}
+
+
+@media screen and (max-width: 600px) {
+    form{
+        width: 100%;
+    }
+    .section::before{
+        height: 120vh;
+    }
+  }

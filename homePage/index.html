@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light border border-3">
+            <div class="container-fluid">
+                <img src="https://th.bing.com/th/id/OIP.8EUQhdL5RyoSa-fX0dz0XwHaHb?pid=ImgDet&rs=1" width="30px"
+                    class="mx-2" alt="">
+                <a class="navbar-brand" href="#">Room Booking</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+
+                        <a href="../loginPage/index.html" class="btn btn-success" type="submit">Sign in</a>
+                        <a href="../registrationPage/index.html" class="btn btn-success mx-4" type="submit">Register</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex justify-content-center">
+            <div style="width: 90%;" class="\">
+                <form class=" p-3" role="search">
+                    <div class="form-floating">
+                        <input type="search" class="form-control shadow" id="date"
+                            placeholder="Ernakulam" name="date">
+                        <label for="email">Search place</label>
+                    </div>
+                    <div class="form-floating" >
+                        <input type="date"  class="shadow form-control" id="date" name="date">
+                        <label for="email">Check-in</label>
+                    </div>
+                    <div class="form-floating" >
+                        <input type="date"  class="form-control shadow" id="date" name="date">
+                        <label for="email">Check-out</label>
+                    </div>
+                    <button class="btn btn-outline-success px-5 shadow" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container py-3">
+            <div class="row py-4 ps-4">
+                <div class="col-md-3 col-12 d-flex justify-content-center my-2">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img class="card-img-top"
+                            src="https://cf.bstatic.com/xdata/images/hotel/square200/224508240.webp?k=f93faac875146d6280389768e908eba90f9351bceabe3a8244e2d8ac07c678f7&o="
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">The Postcard Mandalay Hall</h5>
+                            <p class="card-text">Cochin</p>
+                            <p class="card-text"> <i class="fa-solid fa-star" style="color: #a2a3a4;"></i> <i
+                                    class="fa-solid fa-star" style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> Room</p>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 d-flex justify-content-center my-2">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img class="card-img-top"
+                            src="https://cf.bstatic.com/xdata/images/hotel/square200/59170944.webp?k=6fcc892d611f59947daca9f6d2aa7c2bff159192fd2503ba4f6a0a07e3a7c393&o="
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Daffodils Spice Court</h5>
+                            <p class="card-text">Cochin</p>
+                            <p class="card-text"><i class="fa-solid fa-star" style="color: #a2a3a4;"></i> <i
+                                    class="fa-solid fa-star" style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> Room</p>
+
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 d-flex justify-content-center my-2">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img class="card-img-top"
+                            src="https://cf.bstatic.com/xdata/images/hotel/square200/28480647.webp?k=e5f64bf9a5a5ba7e8c2bc9b084d75b0b10d28c256c042405de1ba2602259b627&o="
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Malabar House</h5>
+                            <p class="card-text">Cochin</p>
+                            <p class="card-text"><i class="fa-solid fa-star" style="color: #a2a3a4;"></i> <i
+                                    class="fa-solid fa-star" style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> Room</p>
+
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 d-flex justify-content-center my-2">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img class="card-img-top"
+                            src="https://cf.bstatic.com/xdata/images/hotel/square200/43615492.webp?k=1321b1a7b4f972675f0a359a1c7e73c5b7d923076ff3bc89652f4a6b776bf1e7&o="
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">The Postcard Mandalay Hall</h5>
+                            <p class="card-text">Cochin</p>
+                            <p class="card-text"><i class="fa-solid fa-star" style="color: #a2a3a4;"></i> <i
+                                    class="fa-solid fa-star" style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> Room</p>
+
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-4 ps-4">
+                <div class="col-md-3 col-12 d-flex justify-content-center my-2">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img class="card-img-top"
+                            src="https://cf.bstatic.com/xdata/images/hotel/square200/89155867.webp?k=1b6ffd45d845fe4d79323506c8d61dbcbbc351db766c39471c2ad86d44c2f33e&o="
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Ginger House Museum</h5>
+                            <p class="card-text">Cochin</p>
+                            <p class="card-text"><i class="fa-solid fa-star" style="color: #a2a3a4;"></i> <i
+                                    class="fa-solid fa-star" style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> Room</p>
+
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 d-flex justify-content-center my-2">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img class="card-img-top"
+                            src="https://cf.bstatic.com/xdata/images/hotel/square200/409193282.webp?k=a8d1a600c8d5a7c8ddd6a46f394207db0e7f60561068431cfc60dc3dce2b8cf7&o="
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Malabar House</h5>
+                            <p class="card-text">Ernakulam</p>
+                            <p class="card-text"><i class="fa-solid fa-star" style="color: #a2a3a4;"></i> <i
+                                    class="fa-solid fa-star" style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> Room</p>
+
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 d-flex justify-content-center my-2">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img class="card-img-top"
+                            src="https://cf.bstatic.com/xdata/images/hotel/square600/243066178.webp?k=52b91911b976c76491aa2edbbaca794e31eee11ef041b0c75be016a63fc41b58&o="
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Malabar House</h5>
+                            <p class="card-text">Cochin</p>
+                            <p class="card-text"><i class="fa-solid fa-star" style="color: #a2a3a4;"></i> <i
+                                    class="fa-solid fa-star" style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> Room</p>
+
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 d-flex justify-content-center my-2">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img class="card-img-top"
+                            src="https://cf.bstatic.com/xdata/images/hotel/square600/10062450.webp?k=b37b49d409905c2aa09830ec90f7dc8e0dd433080e3d94d1acb6f76ac058f372&o="
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Malabar House</h5>
+                            <p class="card-text">Cochin</p>
+                            <p class="card-text"><i class="fa-solid fa-star" style="color: #a2a3a4;"></i> <i
+                                    class="fa-solid fa-star" style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> <i class="fa-solid fa-star"
+                                    style="color: #a2a3a4;"></i> Room</p>
+
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-dark" href="#">Roombooking.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>
